@@ -18,6 +18,10 @@ const containerVariants = {
       delay: 0.5,
     },
   },
+  exit: {
+    x: "-100vw",
+    transition: { ease: "easeInOut" },
+  },
 };
 
 const nextVariants = {
@@ -55,6 +59,7 @@ const Base = ({ addBase, pizza }) => {
       initial="hidden" //uses the hidden tag from containerVariants
       animate="visible" //uses the visible tag from containerVariants
       className="base container"
+      exit="exit"
     >
       <h3>Step 1: Choose Your Base</h3>
       <ul>
