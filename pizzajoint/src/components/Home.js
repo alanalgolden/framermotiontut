@@ -29,7 +29,7 @@ const containerVariants = {
   },
 };
 
-const Home = () => {
+const Home = (showModal) => {
   return (
     <motion.div
       className="home container"
